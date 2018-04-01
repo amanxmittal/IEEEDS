@@ -1,0 +1,336 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.terminator.ieeeds.TeamFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonExecom"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:elevation="2dp"
+            android:onClick="clickButtonExecom"
+            android:text="EXECOM"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/buttonSsn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:elevation="2dp"
+            android:onClick="clickButtonSsn"
+            android:text="SSN"
+            android:textColor="#7c7c7c"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/team_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvteamExe1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/ivLogo1"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:padding="4dp"
+                            app:srcCompat="@drawable/sample" />
+
+                        <TextView
+                            android:id="@+id/tvTitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/ivLogo1"
+                            android:text="IEEE COMPUTER SOCIETY"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/tvDesc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvTitle1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/ivLogo1"
+                            android:text="All major area of computing and information technology: computer, hardware, software. etc,"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvteamExe2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/ivLogo2"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:padding="4dp"
+                            app:srcCompat="@drawable/sample" />
+
+                        <TextView
+                            android:id="@+id/tvTitle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/ivLogo2"
+                            android:text="IEEE COMPUTER SOCIETY"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/tvDesc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvTitle2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/ivLogo2"
+                            android:text="All major area of computing and information technology: computer, hardware, software. etc,"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvteamExe3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/ivLogo3"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:padding="4dp"
+                            app:srcCompat="@drawable/sample" />
+
+                        <TextView
+                            android:id="@+id/tvTitle3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/ivLogo3"
+                            android:text="IEEE COMPUTER SOCIETY"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/tvDesc3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvTitle3"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/ivLogo3"
+                            android:text="All major area of computing and information technology: computer, hardware, software. etc,"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvteamExe4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/ivLogo4"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:padding="4dp"
+                            app:srcCompat="@drawable/sample" />
+
+                        <TextView
+                            android:id="@+id/tvTitle4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/ivLogo4"
+                            android:text="IEEE COMPUTER SOCIETY"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/tvDesc4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvTitle4"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/ivLogo4"
+                            android:text="All major area of computing and information technology: computer, hardware, software. etc,"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvteamSsn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/ivLogo5"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:padding="4dp"
+                            app:srcCompat="@drawable/sample" />
+
+                        <TextView
+                            android:id="@+id/tvTitle5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/ivLogo5"
+                            android:text="IEEE COMPUTER SOCIETY"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/tvDesc5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvTitle5"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/ivLogo5"
+                            android:text="All major area of computing and information technology: computer, hardware, software. etc,"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvteamSsn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/ivLogo6"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:padding="4dp"
+                            app:srcCompat="@drawable/sample" />
+
+                        <TextView
+                            android:id="@+id/tvTitle6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/ivLogo6"
+                            android:text="IEEE COMPUTER SOCIETY"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/tvDesc6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvTitle6"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/ivLogo6"
+                            android:text="All major area of computing and information technology: computer, hardware, software. etc,"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
