@@ -23,7 +23,7 @@
                 app:srcCompat="@drawable/sample" />
 
             <TextView
-                android:id="@+id/tvTitle1"
+                android:id="@+id/tvTitleSsn8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -36,7 +36,7 @@
                 android:id="@+id/textViewDesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tvTitle1"
+                android:layout_below="@id/tvTitleSsn8"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/ivLogo1"

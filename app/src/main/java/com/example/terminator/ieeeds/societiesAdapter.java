@@ -58,7 +58,7 @@ public class societiesAdapter extends RecyclerView.Adapter<societiesAdapter.soci
             super(itemView);
 
             imageView = (ImageView) itemView.findViewById(R.id.ivLogo1);
-            textViewTitle = (TextView) itemView.findViewById(R.id.tvTitle1);
+            textViewTitle = (TextView) itemView.findViewById(R.id.tvTitleSsn8);
             textViewDesc = (TextView) itemView.findViewById(R.id.textViewDesc);
 
         }

@@ -30,7 +30,7 @@ public class ContactActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(ContactActivity.this,"contact clicked",Toast.LENGTH_SHORT).show();
+                Toast.makeText(ContactActivity.this,"Feedback Received",Toast.LENGTH_SHORT).show();
                 etName.setText(null);
                 etMemberId.setText(null);
                 etEmail.setText(null);

@@ -18,7 +18,9 @@ import android.widget.Button;
 public class TeamFragment extends Fragment {
 
     private Button buttonExecom, buttonSsn;
-    private CardView cvteamExe1, cvteamExe2, cvteamExe3, cvteamExe4, cvteamSsn1, cvteamSsn2;
+    private CardView cvteamExe1, cvteamExe2, cvteamExe3, cvteamExe4, cvteamExe5, cvteamExe6, cvteamExe7;
+    private CardView cvteamSsn1, cvteamSsn2, cvteamSsn3, cvteamSsn4, cvteamSsn5, cvteamSsn6, cvteamSsn7, cvteamSsn8, cvteamSsn9, cvteamSsn10;
+    private CardView cvteamSsn11, cvteamSsn12, cvteamSsn13, cvteamSsn14, cvteamSsn15, cvteamSsn16, cvteamSsn17, cvteamSsn18, cvteamSsn19;
 
 
 
@@ -45,8 +47,30 @@ public class TeamFragment extends Fragment {
         cvteamExe2 = (CardView) view.findViewById(R.id.cvteamExe2);
         cvteamExe3 = (CardView) view.findViewById(R.id.cvteamExe3);
         cvteamExe4 = (CardView) view.findViewById(R.id.cvteamExe4);
+        cvteamExe5 = (CardView) view.findViewById(R.id.cvteamExe5);
+        cvteamExe6 = (CardView) view.findViewById(R.id.cvteamExe6);
+        cvteamExe7 = (CardView) view.findViewById(R.id.cvteamExe7);
+
         cvteamSsn1 = (CardView) view.findViewById(R.id.cvteamSsn1);
         cvteamSsn2 = (CardView) view.findViewById(R.id.cvteamSsn2);
+        cvteamSsn3 = (CardView) view.findViewById(R.id.cvteamSsn3);
+        cvteamSsn4 = (CardView) view.findViewById(R.id.cvteamSsn4);
+        cvteamSsn5 = (CardView) view.findViewById(R.id.cvteamSsn5);
+        cvteamSsn6 = (CardView) view.findViewById(R.id.cvteamSsn6);
+        cvteamSsn7 = (CardView) view.findViewById(R.id.cvteamSsn7);
+        cvteamSsn8 = (CardView) view.findViewById(R.id.cvteamSsn8);
+        cvteamSsn9 = (CardView) view.findViewById(R.id.cvteamSsn9);
+        cvteamSsn10= (CardView) view.findViewById(R.id.cvteamSsn10);
+        cvteamSsn11= (CardView) view.findViewById(R.id.cvteamSsn11);
+        cvteamSsn12= (CardView) view.findViewById(R.id.cvteamSsn12);
+        cvteamSsn13= (CardView) view.findViewById(R.id.cvteamSsn13);
+        cvteamSsn14= (CardView) view.findViewById(R.id.cvteamSsn14);
+        cvteamSsn15= (CardView) view.findViewById(R.id.cvteamSsn15);
+        cvteamSsn16= (CardView) view.findViewById(R.id.cvteamSsn16);
+        cvteamSsn17= (CardView) view.findViewById(R.id.cvteamSsn17);
+        cvteamSsn18= (CardView) view.findViewById(R.id.cvteamSsn18);
+        cvteamSsn19= (CardView) view.findViewById(R.id.cvteamSsn19);
+
 
         buttonExecom.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,8 +83,29 @@ public class TeamFragment extends Fragment {
                 cvteamExe2.setVisibility(View.VISIBLE);
                 cvteamExe3.setVisibility(View.VISIBLE);
                 cvteamExe4.setVisibility(View.VISIBLE);
+                cvteamExe5.setVisibility(View.VISIBLE);
+                cvteamExe6.setVisibility(View.VISIBLE);
+                cvteamExe7.setVisibility(View.VISIBLE);
+
                 cvteamSsn1.setVisibility(View.GONE);
                 cvteamSsn2.setVisibility(View.GONE);
+                cvteamSsn3.setVisibility(View.GONE);
+                cvteamSsn4.setVisibility(View.GONE);
+                cvteamSsn5.setVisibility(View.GONE);
+                cvteamSsn6.setVisibility(View.GONE);
+                cvteamSsn7.setVisibility(View.GONE);
+                cvteamSsn8.setVisibility(View.GONE);
+                cvteamSsn9.setVisibility(View.GONE);
+                cvteamSsn10.setVisibility(View.GONE);
+                cvteamSsn11.setVisibility(View.GONE);
+                cvteamSsn12.setVisibility(View.GONE);
+                cvteamSsn13.setVisibility(View.GONE);
+                cvteamSsn14.setVisibility(View.GONE);
+                cvteamSsn15.setVisibility(View.GONE);
+                cvteamSsn16.setVisibility(View.GONE);
+                cvteamSsn17.setVisibility(View.GONE);
+                cvteamSsn18.setVisibility(View.GONE);
+                cvteamSsn19.setVisibility(View.GONE);
 
             }
         });
@@ -75,8 +120,29 @@ public class TeamFragment extends Fragment {
                 cvteamExe2.setVisibility(View.GONE);
                 cvteamExe3.setVisibility(View.GONE);
                 cvteamExe4.setVisibility(View.GONE);
+                cvteamExe5.setVisibility(View.GONE);
+                cvteamExe6.setVisibility(View.GONE);
+                cvteamExe7.setVisibility(View.GONE);
+
                 cvteamSsn1.setVisibility(View.VISIBLE);
                 cvteamSsn2.setVisibility(View.VISIBLE);
+                cvteamSsn3.setVisibility(View.VISIBLE);
+                cvteamSsn4.setVisibility(View.VISIBLE);
+                cvteamSsn5.setVisibility(View.VISIBLE);
+                cvteamSsn6.setVisibility(View.VISIBLE);
+                cvteamSsn7.setVisibility(View.VISIBLE);
+                cvteamSsn8.setVisibility(View.VISIBLE);
+                cvteamSsn9.setVisibility(View.VISIBLE);
+                cvteamSsn10.setVisibility(View.VISIBLE);
+                cvteamSsn11.setVisibility(View.VISIBLE);
+                cvteamSsn12.setVisibility(View.VISIBLE);
+                cvteamSsn13.setVisibility(View.VISIBLE);
+                cvteamSsn14.setVisibility(View.VISIBLE);
+                cvteamSsn15.setVisibility(View.VISIBLE);
+                cvteamSsn16.setVisibility(View.VISIBLE);
+                cvteamSsn17.setVisibility(View.VISIBLE);
+                cvteamSsn18.setVisibility(View.VISIBLE);
+                cvteamSsn19.setVisibility(View.VISIBLE);
 
             }
         });

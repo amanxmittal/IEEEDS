@@ -19,11 +19,14 @@
         android:enabled="true"
         android:icon="@drawable/ic_member"
         android:title="TEAM" />
-
+<!--
     <item
         android:id="@+id/action_bookmark"
         android:enabled="true"
         android:icon="@drawable/ic_save"
-        android:title="BOOKMARK" />
+        android:title="BOOKMARK"
+        android:visible="false" />
+
+        -->
 
 </menu>

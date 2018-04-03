@@ -12,6 +12,7 @@ import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,7 +31,9 @@ public class MainActivity extends AppCompatActivity {
     private HomeFragment homeFragment;
     private ExploreFragment exploreFragment;
     private TeamFragment teamFragment;
-    private BookmarkFragment bookmarkFragment;
+    //private BookmarkFragment bookmarkFragment;
+
+    private CardView cvEventDetail1, cvEventDetail2, cvEventDetail3;
 
     private Button buttonExecom, buttonSsn;
     private CardView cvteamExe1, cvteamExe2, cvteamExe3, cvteamExe4, cvteamSsn1, cvteamSsn2;
@@ -51,13 +54,17 @@ public class MainActivity extends AppCompatActivity {
         mainFrame = (FrameLayout) findViewById(R.id.main_frame);
         mainNav = (BottomNavigationView)findViewById(R.id.bottom_navigation);
 
+        cvEventDetail1 = (CardView) findViewById(R.id.cvEventDetail1);
+        cvEventDetail2 = (CardView) findViewById(R.id.cvEventDetail2);
+        cvEventDetail3 = (CardView) findViewById(R.id.cvEventDetail3);
+
         homeFragment = new HomeFragment();
         exploreFragment = new ExploreFragment();
         teamFragment = new TeamFragment();
-        bookmarkFragment = new BookmarkFragment();
+        //bookmarkFragment = new BookmarkFragment();
 
 
-        buttonExecom = (Button) findViewById(R.id.buttonExecom);
+        /*buttonExecom = (Button) findViewById(R.id.buttonExecom);
         buttonSsn = (Button)    findViewById(R.id.buttonSsn);
 
         cvteamExe1 = (CardView) findViewById(R.id.cvteamExe1);
@@ -65,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         cvteamExe3 = (CardView) findViewById(R.id.cvteamExe3);
         cvteamExe4 = (CardView) findViewById(R.id.cvteamExe4);
         cvteamSsn1 = (CardView) findViewById(R.id.cvteamSsn1);
-        cvteamSsn2 = (CardView) findViewById(R.id.cvteamSsn2);
+        cvteamSsn2 = (CardView) findViewById(R.id.cvteamSsn2);*/
 
         setFragment(homeFragment);
 
@@ -87,10 +94,10 @@ public class MainActivity extends AppCompatActivity {
                         setFragment(teamFragment);
                         Toast.makeText(MainActivity.this,"Action Member Click", Toast.LENGTH_SHORT).show();
                         break;
-                    case R.id.action_bookmark:
-                        setFragment(bookmarkFragment);
-                        Toast.makeText(MainActivity.this,"Action Save Click", Toast.LENGTH_SHORT).show();
-                        break;
+                    //case R.id.action_bookmark:
+                     //   setFragment(bookmarkFragment);
+                     //   Toast.makeText(MainActivity.this,"Action Save Click", Toast.LENGTH_SHORT).show();
+                     //   break;
                 }
 
                 return true;

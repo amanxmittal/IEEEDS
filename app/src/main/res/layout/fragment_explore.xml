@@ -14,19 +14,109 @@
         -->
 
 
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvSocietyDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/ivEvent1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/image_logo_round"
+                android:padding="4dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/i1" />
+
+            <TextView
+                android:id="@+id/tvEventTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/circuits_and_systems_society"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivEvent1" />
+
+            <TextView
+                android:id="@+id/tvEventDesc"
+                android:layout_width="332dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/circuits_and_systems_society_desc"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEventTitle1" />
+
+            <Button
+                android:id="@+id/buttonSocietyLink"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="86dp"
+                android:layout_height="39dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:text="Link"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEventDesc"
+                tools:layout_editor_absoluteY="441dp" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+
+
             <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -37,38 +127,49 @@
                         android:id="@+id/ivLogo1"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
                         android:padding="4dp"
-                        app:srcCompat="@drawable/sample" />
+                        app:srcCompat="@drawable/i1" />
 
                     <TextView
-                        android:id="@+id/tvTitle1"
+                        android:id="@+id/tvHead1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
                         android:layout_toRightOf="@id/ivLogo1"
-                        android:text="IEEE COMPUTER SOCIETY"
+                        android:text="@string/circuits_and_systems_society"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                        android:textColor="#000000" />
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvDesc1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/tvTitle1"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead1"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
                         android:layout_marginTop="10dp"
                         android:layout_toRightOf="@id/ivLogo1"
-                        android:text="All major area of computing and information technology: computer, hardware, software. etc,"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+                        android:text="@string/circuits_and_systems_society_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
 
                 </RelativeLayout>
 
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -79,38 +180,49 @@
                         android:id="@+id/ivLogo2"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
                         android:padding="4dp"
-                        app:srcCompat="@drawable/sample" />
+                        app:srcCompat="@drawable/i2" />
 
                     <TextView
-                        android:id="@+id/tvTitle2"
+                        android:id="@+id/tvHead2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
                         android:layout_toRightOf="@id/ivLogo2"
-                        android:text="IEEE COMPUTER SOCIETY"
+                        android:text="@string/computer_society"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                        android:textColor="#000000" />
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvDesc2"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/tvTitle2"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead2"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
                         android:layout_marginTop="10dp"
                         android:layout_toRightOf="@id/ivLogo2"
-                        android:text="All major area of computing and information technology: computer, hardware, software. etc,"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+                        android:text="@string/computer_society_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
 
                 </RelativeLayout>
 
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -121,38 +233,49 @@
                         android:id="@+id/ivLogo3"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
                         android:padding="4dp"
-                        app:srcCompat="@drawable/sample" />
+                        app:srcCompat="@drawable/i3" />
 
                     <TextView
-                        android:id="@+id/tvTitle3"
+                        android:id="@+id/tvHead3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
                         android:layout_toRightOf="@id/ivLogo3"
-                        android:text="IEEE COMPUTER SOCIETY"
+                        android:text="@string/power_and_energy_society"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                        android:textColor="#000000" />
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvDesc3"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/tvTitle3"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead3"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
                         android:layout_marginTop="10dp"
                         android:layout_toRightOf="@id/ivLogo3"
-                        android:text="All major area of computing and information technology: computer, hardware, software. etc,"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+                        android:text="@string/power_and_energy_society_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
 
                 </RelativeLayout>
 
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -163,38 +286,49 @@
                         android:id="@+id/ivLogo4"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
                         android:padding="4dp"
-                        app:srcCompat="@drawable/sample" />
+                        app:srcCompat="@drawable/i4" />
 
                     <TextView
-                        android:id="@+id/tvTitle4"
+                        android:id="@+id/tvHead4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
                         android:layout_toRightOf="@id/ivLogo4"
-                        android:text="IEEE COMPUTER SOCIETY"
+                        android:text="@string/industry_applications_society"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                        android:textColor="#000000" />
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvDesc4"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/tvTitle4"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead4"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
                         android:layout_marginTop="10dp"
                         android:layout_toRightOf="@id/ivLogo4"
-                        android:text="All major area of computing and information technology: computer, hardware, software. etc,"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+                        android:text="@string/industry_applications_society_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
 
                 </RelativeLayout>
 
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -205,38 +339,49 @@
                         android:id="@+id/ivLogo5"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
                         android:padding="4dp"
-                        app:srcCompat="@drawable/sample" />
+                        app:srcCompat="@drawable/i5" />
 
                     <TextView
-                        android:id="@+id/tvTitle5"
+                        android:id="@+id/tvHead5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
                         android:layout_toRightOf="@id/ivLogo5"
-                        android:text="IEEE COMPUTER SOCIETY"
+                        android:text="@string/communications_society"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                        android:textColor="#000000" />
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvDesc5"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/tvTitle5"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead5"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
                         android:layout_marginTop="10dp"
                         android:layout_toRightOf="@id/ivLogo5"
-                        android:text="All major area of computing and information technology: computer, hardware, software. etc,"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+                        android:text="@string/communications_society_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
 
                 </RelativeLayout>
 
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -247,33 +392,838 @@
                         android:id="@+id/ivLogo6"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
                         android:padding="4dp"
-                        app:srcCompat="@drawable/sample" />
+                        app:srcCompat="@drawable/i6" />
 
                     <TextView
-                        android:id="@+id/tvTitle6"
+                        android:id="@+id/tvHead6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
                         android:layout_toRightOf="@id/ivLogo6"
-                        android:text="IEEE COMPUTER SOCIETY"
+                        android:text="@string/technology_and_engineering_management_society"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                        android:textColor="#000000" />
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvDesc6"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/tvTitle6"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead6"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
                         android:layout_marginTop="10dp"
                         android:layout_toRightOf="@id/ivLogo6"
-                        android:text="All major area of computing and information technology: computer, hardware, software. etc,"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+                        android:text="@string/technology_and_engineering_management_society_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
 
                 </RelativeLayout>
 
             </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivLogo7"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/i7" />
+
+                    <TextView
+                        android:id="@+id/tvHead7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo7"
+                        android:text="@string/instrumentation_and_measurement_society"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDesc7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead7"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo7"
+                        android:text="@string/instrumentation_and_measurement_society_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivLogo8"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/i8" />
+
+                    <TextView
+                        android:id="@+id/tvHead8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo8"
+                        android:text="@string/engineering_in_medicine_and_biology_society"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDesc8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead8"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo8"
+                        android:text="@string/engineering_in_medicine_and_biology_society_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivLogo9"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/i9" />
+
+                    <TextView
+                        android:id="@+id/tvHead9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo9"
+                        android:text="@string/power_electronics_society"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDesc9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead9"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo9"
+                        android:text="@string/power_electronics_society_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivLogo10"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/i10" />
+
+                    <TextView
+                        android:id="@+id/tvHead10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo10"
+                        android:text="@string/industrial_electronics_society"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDesc10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead10"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo10"
+                        android:text="@string/industrial_electronics_society_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivLogo11"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/i11" />
+
+                    <TextView
+                        android:id="@+id/tvHead11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo11"
+                        android:text="@string/electron_devices_society"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDesc11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead11"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo11"
+                        android:text="@string/electron_devices_society_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivLogo12"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/i12" />
+
+                    <TextView
+                        android:id="@+id/tvHead12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo12"
+                        android:text="@string/microwave_theory_and_techniques_society"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDesc12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead12"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo12"
+                        android:text="@string/microwave_theory_and_techniques_society_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivLogo13"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/i13" />
+
+                    <TextView
+                        android:id="@+id/tvHead13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo13"
+                        android:text="@string/computational_intelligence_society"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDesc13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead13"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo13"
+                        android:text="@string/computational_intelligence_society_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivLogo14"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/i14" />
+
+                    <TextView
+                        android:id="@+id/tvHead14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo14"
+                        android:text="@string/geoscience_and_remote_sensing_society"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDesc14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead14"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo14"
+                        android:text="@string/geoscience_and_remote_sensing_society_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivLogo15"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/i15" />
+
+                    <TextView
+                        android:id="@+id/tvHead15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo15"
+                        android:text="@string/solid_state_circuits_society"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDesc15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead15"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo15"
+                        android:text="@string/solid_state_circuits_society_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivLogo16"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/i16" />
+
+                    <TextView
+                        android:id="@+id/tvHead16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo16"
+                        android:text="@string/education_society"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDesc16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead16"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo16"
+                        android:text="@string/education_society_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivLogo17"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/i17" />
+
+                    <TextView
+                        android:id="@+id/tvHead17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo17"
+                        android:text="@string/signal_processing_society"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDesc17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead17"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo17"
+                        android:text="@string/signal_processing_society_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivLogo18"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/i18" />
+
+                    <TextView
+                        android:id="@+id/tvHead18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo18"
+                        android:text="@string/women_in_engineering_affinity_group"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDesc18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead18"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo18"
+                        android:text="@string/women_in_engineering_affinity_group_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivLogo19"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/i19" />
+
+                    <TextView
+                        android:id="@+id/tvHead19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo19"
+                        android:text="@string/young_professionals_affinity_group"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDesc19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead19"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo19"
+                        android:text="@string/young_professionals_affinity_group_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivLogo20"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/i20" />
+
+                    <TextView
+                        android:id="@+id/tvHead20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo20"
+                        android:text="@string/ieee_brain"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDesc20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead20"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo20"
+                        android:text="@string/ieee_brain_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSociety21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivLogo21"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/image_logo_round"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/i21" />
+
+                    <TextView
+                        android:id="@+id/tvHead21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo21"
+                        android:text="@string/control_systems_society"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDesc21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/tvHead21"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/ivLogo21"
+                        android:text="@string/control_systems_society_desc"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
 
 
         </LinearLayout>
