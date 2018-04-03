@@ -1,6 +1,5 @@
 package com.example.terminator.ieeeds;
 
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -123,11 +122,6 @@ public class HomeFragment extends Fragment  {
             }
         });
 
-
-        //cvEventDetail1.setOnTouchListener(new View.OnSwipe);
-        //cvEventDetail1.setVisibility(View.GONE);
-        //cvEventDetail2.setVisibility(View.GONE);
-        //cvEventDetail3.setVisibility(View.GONE);
 
 
 
