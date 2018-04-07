@@ -21,7 +21,7 @@ import android.widget.Toast;
 public class ExploreFragment extends Fragment {
 
 
-    Button buttonSocietyLink;
+    Button buttonSocietyLink, buttonExploreBack;
     CardView cvSocietyDetail, cvSociety1, cvSociety2, cvSociety3, cvSociety4, cvSociety5, cvSociety6, cvSociety7, cvSociety8, cvSociety9, cvSociety10, cvSociety11;
     CardView cvSociety12, cvSociety13, cvSociety14, cvSociety15, cvSociety16, cvSociety17, cvSociety18, cvSociety19, cvSociety20, cvSociety21;
 
@@ -41,6 +41,7 @@ public class ExploreFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_explore, container, false);
 
         buttonSocietyLink = (Button) view.findViewById(R.id.buttonSocietyLink);
+        buttonExploreBack = (Button) view.findViewById(R.id.buttonExploreBack);
 
         ivLogoDetail = (ImageView) view.findViewById(R.id.ivEvent1);
         tvHeadDetail = (TextView) view.findViewById(R.id.tvEventTitle1);
@@ -82,7 +83,7 @@ public class ExploreFragment extends Fragment {
             }
         });
 
-        cvSocietyDetail.setOnClickListener(new View.OnClickListener() {
+        buttonExploreBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setCard(cvSocietyDetail);
@@ -536,5 +537,6 @@ public class ExploreFragment extends Fragment {
         cvSociety20.setVisibility(View.VISIBLE);
         cvSociety21.setVisibility(View.VISIBLE);
     }
+
 
 }

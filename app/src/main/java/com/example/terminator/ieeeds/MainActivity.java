@@ -84,15 +84,15 @@ public class MainActivity extends AppCompatActivity {
                 {
                     case R.id.action_home:
                         setFragment(homeFragment);
-                        Toast.makeText(MainActivity.this,"Action Home Click", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MainActivity.this,"Action Home Click", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_explore:
                         setFragment(exploreFragment);
-                        Toast.makeText(MainActivity.this,"Action Explore Click", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MainActivity.this,"Action Explore Click", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_team:
                         setFragment(teamFragment);
-                        Toast.makeText(MainActivity.this,"Action Member Click", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MainActivity.this,"Action Member Click", Toast.LENGTH_SHORT).show();
                         break;
                     //case R.id.action_bookmark:
                      //   setFragment(bookmarkFragment);
@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
         if(id==R.id.action_contact)
         {
             startActivity(new Intent(this, ContactActivity.class));
-            Toast.makeText(this,"contact clicked",Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this,"contact clicked",Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }
